@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <conio.h>
+
+main()
+{
+    int num;
+    printf("ingrese un numero\n");
+    scanf("%d", &num);
+
+    if (num==0)
+    {
+        printf("El numero %d es neutro" ,num);
+    }
+    else
+    {
+        if(num>0)
+        {
+            printf("El numero %d es positivo" ,num);
+        }
+        else
+        {
+            printf("El numero %d es negativo" ,num);
+        }
+    }
+    return 0;
+}

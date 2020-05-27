@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+
+main()
+
+{
+    char letra[100];
+    int palabra;
+
+    printf ("Introduzca un texto");
+    gets (letra);
+    palabra = strlen(letra);
+    
+    if (palabra<=10)
+    {
+        printf("La palabra es menor a 10");
+    }
+    else
+    {
+        printf("La palabra es mayor a 10");
+    }
+
+    getch();
+
+}

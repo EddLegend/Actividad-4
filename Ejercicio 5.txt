@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+main()
+{
+    int i;
+    int found = 0;
+    char arr[1000];
+    char *token;
+    const char s[2] = " ";
+
+    printf("Escriba su texto:\n");
+    scanf("%999[^\n]", arr);
+    token = strtok(arr, s);
+
+    while(token!=NULL)
+    {
+        if(token[0] == token[strlen(token)-1])
+        {
+            found++;
+        }
+
+        token = strtok(NULL, s);
+    }
+
+    if(found > 0)
+    {
+        printf("Hay %d palabra que inicia y finaliza con la misma letra.\n", found);
+    }
+    return 0;
+}
